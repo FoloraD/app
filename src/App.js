@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Page1 } from './Page1';
+import { Page2 } from './Page2';
+
+function SelectPage(state, setState) {
+  switch (state.page) {
+    case "page1":
+      return <Page1 state={state} setState={setState} />
+    case "page2":
+      return <Page2 state={state} setState={setState} />
+  }
+}
 
 function App() {
+  const [state, setState] = useState({page: "page1"})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='navbar'></div>
+      {SelectPage(state, setState)}
     </div>
   );
 }
