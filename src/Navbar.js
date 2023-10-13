@@ -4,4 +4,5 @@ export function Navbar() {
         <p> Who We Are</p>
         <p>Login</p>
         
-         <div/>
+    </div>
+}
