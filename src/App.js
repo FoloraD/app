@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import { Page1 } from './Page1';
 import { Page2 } from './Page2';
+import { Navbar } from './Navbar';
 
 function SelectPage(state, setState) {
   switch (state.page) {
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='navbar'></div>
+     <Navbar/>
       {SelectPage(state, setState)}
     </div>
   );
