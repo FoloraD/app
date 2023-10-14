@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+
 import './App.css';
 import { useState } from 'react';
 import { Page1 } from './components/Page1';
@@ -22,7 +23,7 @@ function App() {
     <div className="App">
      <Navbar/>
       {SelectPage(state, setState)}
-      <Home/>
+      <Home />
     </div>
   );
 }
