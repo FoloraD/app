@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import { Page1 } from './Page1';
-import { Page2 } from './Page2';
-import { Navbar } from './Navbar';
+import { Page1 } from './components/Page1';
+import { Page2 } from './components/Page2';
+import { Navbar } from './components/Navbar';
+import { Home } from './components/Home';
 
 function SelectPage(state, setState) {
   switch (state.page) {
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
      <Navbar/>
       {SelectPage(state, setState)}
+      <Home/>
     </div>
   );
 }
