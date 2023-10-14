@@ -24,6 +24,7 @@ export function Home() {
       <div className='bg-white'> 
             <div>
             <p class="mb-3 text-4xl font-normal text-black dark:text-gray-400">Katherine Johnson</p>
+            <p class="mb-3 text-3xl font-normal text-gray-400">Mathematician</p>
             <img src="https://static01.nyt.com/images/2020/02/26/obituaries/24Johnson1/merlin_157899726_f670c425-adb2-46f6-9c15-bc356754fb87-superJumbo.jpg?quality=75&auto=webp" ></img>
             </div>     
             <div>
