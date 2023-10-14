@@ -17,8 +17,7 @@ export function Home() {
       <input className='text-white px-10 py-2 shadow-lg' aria-label='search input' placeholder="a scientist..."></input>
 
      
-      <button className='bg-[#008364] px-12 text-[#FFFFFF] font-bold  py-2 shadow-lg' 
-      >Dream on </button>
+      <button className='bg-[#008364] px-12 text-[#FFFFFF] font-bold  py-2 shadow-lg'> search </button>
 
       </div>
 
