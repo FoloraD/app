@@ -5,6 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { Page1 } from "./components/Page1";
 import { Page2 } from "./components/Page2";
 import { TimelineCard } from "./components/TimelineCard";
+import { Timeline } from "./components/Timeline";
 
 function SelectPage(state, setState) {
 	switch (state.page) {
@@ -25,7 +26,9 @@ function App() {
 			<Navbar />
 			{SelectPage(state, setState)}
 			<Home />
+      <Timeline/>
 			<TimelineCard />
+      
 		</div>
 	);
 }
